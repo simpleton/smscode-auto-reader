@@ -2,12 +2,12 @@
 Help you to read sms code automatically.
 ## How to User
 
-1. Include SMS read permission
+###1. Include SMS read permission
     
 add`<uses-permission android:name="android.permission.READ_SMS" />` in your AndroidManifest.xml file
 
 
-2. Register the observer in your code
+###2. Register the observer in your code
 
 Put the below codes to your onCreate callback
 
@@ -22,7 +22,7 @@ Put the below codes to your onCreate callback
         }
     );
     
-3. Unregister the observer in your code
+###3. Unregister the observer in your code
 
 Put the below codes to your onDestory callback
 
