@@ -1,8 +1,44 @@
-.gradle
-build/
 
 # Ignore Gradle GUI config
 gradle-app.setting
 
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
 !gradle-wrapper.jar
+
+# Gradle
+.gradle
+build/
+gradlew.bat
+build
+local.properties
+reports
+
+# Maven
+target
+pom.xml.*
+release.properties
+gen-external-apklibs
+
+# Eclipse
+.classpath
+.project
+.settings
+eclipsebin
+
+# IntelliJ IDEA
+.idea
+*.iml
+*.ipl
+*.iws
+classes/
+idea-classes/
+coverage-error.log
+
+# Android
+gen
+bin
+project.properties
+out
+
+# Finder
+.DS_Store
