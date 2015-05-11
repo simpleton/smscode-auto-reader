@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
-version = "0.0.1"
+version = "0.0.2"
 android {
     compileSdkVersion 22
     buildToolsVersion "22.0.0"
@@ -36,7 +36,7 @@ install {
             project {
                 packaging 'jar'
                 // Add your description here
-                name 'Android SMS CODE AUTO-READER' //项目描述
+                name 'Android SMS CODE AUTO-READER'
                 url homePageUrl
                 // Set your license
                 licenses {
@@ -47,7 +47,7 @@ install {
                 }
                 developers {
                     developer {
-                        id 'sim sun'    //填写的一些基本信息
+                        id 'sim sun'
                         name 'sim sun'
                         email 'sunsj1231@gmail.com'
                     }
