@@ -24,6 +24,12 @@ public class SmsContentObserver extends ContentObserver {
     private final ReceiveListener callback;
     private final Pattern pattern;
 
+    /**
+     * @param handler Android handler
+     * @param context your context
+     * @param tags the tag which your sms contains
+     * @param callback the callback we catch the sms code
+     */
     public SmsContentObserver(Handler handler, Context context, String[] tags, ReceiveListener callback) {
         super(handler);
         if (context == null || callback == null || handler == null || Utils.isBlank(tags)) {
@@ -35,6 +41,13 @@ public class SmsContentObserver extends ContentObserver {
         this.pattern = Pattern.compile("\\d{4,8}");
     }
 
+    /**
+     * @param handler Android handler
+     * @param context your context
+     * @param tags the tag which your sms contains
+     * @param callback the callback we catch the sms code
+     * @param pattern the pattern which your sms code should be, the default pattern is \\d{4,8}.
+     */
     public SmsContentObserver(Handler handler, Context context, String[] tags, ReceiveListener callback, Pattern pattern) {
         super(handler);
         if (context == null || callback == null || handler == null || Utils.isBlank(tags)) {
