@@ -6,8 +6,11 @@ Help you to read sms code automatically.
     
 add`<uses-permission android:name="android.permission.READ_SMS" />` in your AndroidManifest.xml file
 
+###2. Import library from gradle
 
-###2. Register the observer in your code
+    compile 'com.simsun.scra:library:0.0.2'
+
+###3. Register the observer in your code
 
 Put the below codes to your onCreate callback
 
@@ -22,7 +25,7 @@ Put the below codes to your onCreate callback
         }
     );
     
-###3. Unregister the observer in your code
+###4. Unregister the observer in your code
 
 Put the below codes to your onDestory callback
 
